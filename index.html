@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PVP24CAT — Telegram заработок</title>
+  <meta name="description" content="Заработок онлайн без вложений. Подключайся к команде PVP24CAT и начинай прямо сейчас!" />
+  <meta property="og:title" content="PVP24CAT — заработок в Telegram" />
+  <meta property="og:description" content="Без вложений. Еженедельные выплаты. Работаем честно и прозрачно." />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:url" content="https://pvp24cat.github.io/pvp24cat/" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <script defer src="money.js"></script>
+  <script defer src="timer.js"></script>
+  <script defer src="notification.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span>PVP24CAT</span>
+        <div class="burger" onclick="document.querySelector('nav ul').classList.toggle('active')">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Работа в Telegram без вложений</h1>
+      <p>Подключайся к нашей команде и зарабатывай из любой точки мира. Всё прозрачно и безопасно.</p>
+      <div class="buttons">
+        <a href="https://t.me/operator_cat24" target="_blank">💬 Связаться с оператором</a>
+        <a href="https://t.me/pvp24cat" target="_blank">👥 Присоединиться к чату</a>
+        <a href="https://t.me/pvp24_cat_bot" target="_blank">🤖 Перейти к боту</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="content">
+      <h2>О нас</h2>
+      <p>Мы — команда, которая помогает новичкам и опытным пользователям зарабатывать в Telegram. Выплаты каждую неделю. Минимум требований — максимум поддержки!</p>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="content">
+      <h2>Преимущества</h2>
+      <div class="advantage-list">
+        <div class="advantage-item">💸 Без вложений</div>
+        <div class="advantage-item">🕒 Свободный график</div>
+        <div class="advantage-item">📱 Работа с телефона</div>
+        <div class="advantage-item">🧑‍💻 Поддержка 24/7</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer">
+    <div class="content">
+      <h2>До конца набора:</h2>
+      <div id="countdown">Загрузка...</div>
+    </div>
+  </section>
+
+  
+  <section class="how-to-start" id="how">
+    <div class="content">
+      <h2>🚀 Как начать?</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1️⃣ Напиши боту</h3>
+          <p>Открой Telegram и начни диалог с нашим ботом.</p>
+        </div>
+        <div class="step">
+          <h3>2️⃣ Следуй инструкции</h3>
+          <p>Пройди короткое обучение и выполни первые шаги.</p>
+        </div>
+        <div class="step">
+          <h3>3️⃣ Получи выплату</h3>
+          <p>Начни зарабатывать и получай деньги каждую неделю.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="faq" id="faq">
+    <div class="content">
+      <h2>Частые вопросы</h2>
+      <div class="faq-list">
+        <div class="faq-item"><strong>💬 Это легально?</strong><p>Да. Мы не просим данные, не нарушаем законы и не требуем вложений.</p></div>
+        <div class="faq-item"><strong>📦 Нужны ли вложения?</strong><p>Нет! Всё бесплатно. Заработок идёт с активности.</p></div>
+        <div class="faq-item"><strong>⏱ Сколько времени занимает?</strong><p>Ты выбираешь сам. Уделяй 1–2 часа в день или работай больше.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="content">
+      <h2>Контакты</h2>
+      <p>Если остались вопросы — пиши нам в Telegram:</p>
+      <a class="telegram-link" href="https://t.me/operator_cat24" target="_blank">📲 @operator_cat24</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 PVP24CAT. Все права защищены.</p>
+  
+  <section class="live-earnings">
+    <div class="content">
+      <h2>💰 Заработано сегодня:</h2>
+      <p id="live-money">0₽</p>
+    </div>
+  </section>
+
+  </footer>
+
+  <div id="payment-notification" class="payment-notification" style="display:none;">
+    💸 Выплата 7200₽ Ивану из Москвы!
+  </div>
+
+  <a href="https://t.me/operator_cat24" class="telegram-float" target="_blank">📲</a>
+  <script src="live_money.js"></script>
+  <script src="faq_assistant.js"></script>
+</body>
+</html>
